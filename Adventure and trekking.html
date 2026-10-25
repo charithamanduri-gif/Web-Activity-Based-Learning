@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wild Trails</title>
+<style>
+body{margin:0;font-family:Arial;background:#f1f6ee;color:#25412e}
+nav{background:#173b2b;color:white;padding:18px;display:flex;justify-content:space-between}
+nav a{color:white;text-decoration:none;margin:8px}
+header{text-align:center;padding:45px 15px;color:white;background:linear-gradient(#0005,#0007),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200') center/cover}
+button{background:#d8f36a;border:0;padding:10px 18px;border-radius:20px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;padding:22px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 3px 12px #ccc}
+img{width:100%;height:160px;object-fit:cover}
+.content{padding:14px}
+.info{margin:20px;padding:18px;background:#173b2b;color:white;border-radius:14px}
+footer{text-align:center;padding:15px}
+</style>
+</head>
+<body>
+<nav><b>🌿 WILD TRAILS</b><div><a href="#">Home</a><a href="#trips">Trips</a><a href="#gear">Gear</a><a href="#safe">Safety</a></div></nav>
+<header><h1>Find Your Wild!</h1><p>Explore Mountains • Trek • Camp</p><h3>Adventure Begins Here ⛰️</h3><button onclick="document.getElementById('trips').scrollIntoView()">Explore Trips</button></header>
+<h2 align="center">🏔️ Popular Adventures</h2>
+<div class="grid" id="trips">
+<div class="card"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400" alt="Trekking"><div class="content"><h3>Mountain Trek</h3><p>Difficulty: Moderate</p><p>2 Days | Weekend</p><p>Scenic trails and sunrise views.</p><b>₹2,499/person</b><p><button>Explore</button></p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=400" alt="Camping"><div class="content"><h3>Forest Camping</h3><p>Difficulty: Easy</p><p>1 Day | Overnight</p><p>Tents, stars and campfires.</p><b>₹1,499/person</b><p><button>Explore</button></p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?w=400" alt="Mountain peak"><div class="content"><h3>Peak Challenge</h3><p>Difficulty: Hard</p><p>3 Days | Selected Dates</p><p>For experienced trekkers.</p><b>₹3,999/person</b><p><button>Explore</button></p></div></div>
+</div>
+<div class="info" id="gear"><h3>🎒 Equipment Checklist</h3><p>✓ Trekking shoes and backpack</p><p>✓ Water, snacks and first-aid kit</p><p>✓ Raincoat and flashlight</p></div>
+<div class="info" id="safe"><h3>🛡️ Safety Guidelines</h3><p>Follow your guide, check the weather, stay with your group and carry enough water.</p></div>
+<footer>© 2026 Wild Trails | Explore Responsibly</footer>
+</body>
+</html>
